@@ -36,7 +36,7 @@ class SongAdapter(val context: Context) : RecyclerView.Adapter<SongAdapter.SongV
 
     override fun onBindViewHolder(holder: SongViewHolder, position: Int) {
         holder.title.text = mSongList[position].title
-        holder.artist.text = mSongList[position].artist
+        holder.artist.text = mSongList[position].artistName
         holder.album.text = mSongList[position].album
         holder.filePath.text = mSongList[position].filePath
 
